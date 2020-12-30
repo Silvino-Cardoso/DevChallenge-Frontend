@@ -12,12 +12,17 @@ body{
     align-items: center;
 }
 
+
 #content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
 }
+.hide-content {
+    display: none;
+}
+
 #content h1{
     color: #21EB00;
     font-size: 60px;
@@ -49,9 +54,12 @@ body{
     padding: 20px;
 }
 
+
+
 #content input::-webkit-datetime-edit{
     min-width: 100%;
     width: 100%;
+    
   }
 
 .start-button{
@@ -68,6 +76,14 @@ body{
 }
 
 /* estilização contador */
+
+.div-restart{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #counter-menu{
     width: 100%;
@@ -114,7 +130,7 @@ body{
     text-align: center;
 }
 
-.counter-content h1 {
+.div-restart h4 {
     font-family: 'Roboto', sans-serif;
     color: #a1a1a1;
     font-size: 60px;
@@ -128,9 +144,20 @@ body{
     margin-left: 20px;
 }
 
+.counter-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .counter-content h3 {
     font-family: 'Roboto', sans-serif;
     color: #21EB00;
     font-size: 50px;
     padding-left: 40px;
+}
+
+.hide-content {
+    display: none;
 }
